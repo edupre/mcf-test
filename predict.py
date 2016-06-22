@@ -21,10 +21,18 @@ team_stats = pd.read_csv('input/features.csv')
 home_stats = team_stats[team_stats['FOOTBALL_TEAM_ID'] == home_team]
 away_stats = team_stats[team_stats['FOOTBALL_TEAM_ID'] == away_team]
 
-print(home_stats.shape)
-print(away_stats.shape)
+def fill_empty(df):
+    if df.shape[0] > 0:
+        return df
+    else:
+        data = [np.zeros(df.shape[1])]
+        return pd.DataFrame(data, columns=team_stats.columns.values)
 
-for col in list(home_stats.columns.values):
+# manage new team
+home_stats = fill_empty(home_stats)
+away_stats = fill_empty(away_stats)
+
+for col in list(team_stats.columns.values):
     if col != 'FOOTBALL_TEAM_ID':
         print('{0} | {1} | {2}'.format(col, np.array(home_stats[col])[0], np.array(away_stats[col])[0]))
 
