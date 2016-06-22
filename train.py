@@ -55,7 +55,7 @@ classifiers = [
     ]
 
 # choose the classifier to be keep as a model
-classifier_to_export = "Stochastic Gradient Descent Log"
+classifier_to_export = "Linear SVM"
 
 # loop on classifiers
 for name, clf in zip(names, classifiers):
