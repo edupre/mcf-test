@@ -13,14 +13,14 @@ This repo is a light prediction model on games data.
 
 tech-data/games.csv:
 
-| ID	| DATE	DURATION |	HOME_FOOTBALL_TEAM_ID |	AWAY_FOOTBALL_TEAM_ID |
-| --	| -------------- |	--------------------- |	--------------------- |
+| ID	| DATE |	DURATION |	HOME_FOOTBALL_TEAM_ID |	AWAY_FOOTBALL_TEAM_ID |
+|---|---|---|---|---|
 | 000f9323-6f2d-4fc5-8ee1-817978aecf82 |	2016-02-28 14:00:00 |	90 |	fdb4c45b-4caf-11e5-a731-0242ac110002 |	4db49a6d-4eed-4161-94f8-3605560fba79 |
 
 tech-data/goals.csv:
 
 | ID |	MINUTE |	PERIOD |	FOOTBALL_PLAYER_SCORER_ID |	FOOTBALL_GAME_ID |	FOOTBALL_TEAM_ID |	BODY_PART |	AREA |	TYPE |
-| -- |	------ |	------ |	------------------------- |	---------------- |	---------------- |	--------- |	---- |	---- |
+|---|---|---|---|---|---|---|---|---|
 | 473b84eb-bc01-430a-b536-3229e464bfb8 |	41 |	2 |	b881bfd8-8600-5fe2-bf79-20e272bae555 |	004ba555-5d58-4500-bd91-14fc51e833de |	8353b47a-2c30-5b68-8614-37c178afb5e2 |	PIED_DROIT |	EXTERIEUR_SURFACE |	COUP_FRANC_DIRECT |
 
 ### Train & Predict
