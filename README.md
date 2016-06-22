@@ -27,6 +27,6 @@ tech-data/goals.csv:
 
 1. Init: `python init_train.py max_date` (for instance: `python init_train.py '2016-01-31 14:00:00'`), `max_date` splits data in train and test data sets. Games that occured before `max_date` is used in the train set, otherwise it is used in test set.
 
-2. Train: `python train.py`. You can change the algorithm by modify the file (`classifier_to_export`)? Currently configured: `Linear SVM`.
+2. Train: `python train.py`. You can change the algorithm by modify the file (`classifier_to_export`). Currently configured: `Linear SVM`.
 
 3. Predict: `python predict.py team1 team22` (for instance: `python predict.py 84551c6a-25a6-58e6-aba4-d94855a754c2 62a481f1-4cb0-11e5-a731-0242ac110002`). Return 1, N or 2.
